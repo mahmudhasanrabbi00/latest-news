@@ -1,0 +1,147 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+ font-family: 'Roboto Condensed', sans-serif;
+ line-break: loose;
+}
+
+.container {
+ max-width: 770px;
+ margin: auto;
+}
+
+header{
+ width: 100%;
+ margin: auto;
+ background: #FF8C00;
+}
+header h1 {
+ text-align: center;
+ padding: 20px 0;
+ color: #fff;
+ font-size: 2.5rem;
+ line-height: 4rem;
+}
+.header p {
+ text-align: center;
+ font-size: 1.1rem;
+ font-weight: bold;
+ padding-top: 15px;
+}
+.banner {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+margin-top: 15px;
+}
+.banner img {
+flex-basis: 100%;
+}
+.header h2 {
+ margin: 10px 0px;
+padding: 20px 0px;
+}
+.news-item {
+ display: inline-flex;
+ height: 400px;
+ justify-content: space-around;
+}
+
+.news-item img {
+ height: 400px;
+ padding: 15px 0px;
+} 
+
+.news-item .text {
+ display: flex;
+ flex-direction: column;
+ align-items: baseline;
+ justify-content: end;
+ width: 400px;
+ padding: 15px;
+ margin-top: 30px;
+}
+ .text h4 {
+  margin: 10px 0;
+ }
+
+.text.end button {
+ display: flex;
+ align-self: flex-end;
+}
+
+button {
+ margin: 10px 0;
+ padding: 12px 20px;
+ border: none;
+ border-radius: 20px;
+ text-align: center;
+ background: #FF8C00;
+ color: #fff;
+ font-weight: bold;
+ transition: transform 0.5s;
+}
+
+button:hover {
+ transform: translateX(10%);
+}
+
+.social-link {
+ text-align: center;
+ height: 125px;
+ background-color: #FF8C00;
+}
+.social-link h4 {
+ margin-top: 10px;
+ padding: 10px 0;
+ color: #fff;
+}
+.social-link p {
+ color: #fff;
+}
+nav {
+ margin: 5px 0;
+}
+
+nav ul {
+ list-style-type: none;
+ /* display: inline-block; */
+}
+
+nav ul li {
+ display: inline;
+}
+nav ul li img {
+ width: 35px;
+}
+
+/* -----------media query------------------- */
+@media screen and (max-width: 780px) {
+ .banner img {
+   flex-basis: 95%;
+ }
+ .header h2 {
+  text-align: center;
+ }
+ .news-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 580px;
+  flex-basis: 80%;
+ }
+ .mobile {
+  display: flex;
+  flex-direction: column-reverse;
+ }
+ .news-item.text.img  {
+  margin: 0;
+  padding: 0;
+ }
+}
+ 
